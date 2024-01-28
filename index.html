@@ -24,14 +24,20 @@
       text-align: center;
     }
 
-    nav a {
+    nav button {
+      background-color: #66b3ff; /* Button background color */
       color: white;
-      text-decoration: none;
+      border: none;
       padding: 8px 16px;
       margin: 0 5px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      cursor: pointer;
     }
 
-    nav a:hover {
+    nav button:hover {
       background-color: #99c2ff; /* Lighter blue on hover */
     }
   </style>
@@ -43,16 +49,14 @@
   </header>
 
   <nav>
-    <ul>
-      <li><a href="/about/">About</a></li>
-      <li><a href="/projects/">Projects</a></li>
-      <li><a href="/portfolio/">Portfolio</a></li>
-      <li><a href="/tags/">Tags</a></li>
-      <li><a href="/dreams/">Dreams</a></li>
-      <li><a href="/pandas/">Pandas</a></li>
-      <li><a href="/visuals/">VIZ</a></li>
-      <li><a href="/dataprep/">Data Prep</a></li>
-    </ul>
+    <button onclick="window.location.href='/about/'">About</button>
+    <button onclick="window.location.href='/projects/'">Projects</button>
+    <button onclick="window.location.href='/portfolio/'">Portfolio</button>
+    <button onclick="window.location.href='/tags/'">Tags</button>
+    <button onclick="window.location.href='/dreams/'">Dreams</button>
+    <button onclick="window.location.href='/pandas/'">Pandas</button>
+    <button onclick="window.location.href='/visuals/'">VIZ</button>
+    <button onclick="window.location.href='/dataprep/'">Data Prep</button>
   </nav>
 
   <!-- Your page content goes here -->
