@@ -6,83 +6,56 @@
   <style>
     body {
       font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
     }
 
-    .tabs {
-      display: flex;
+    header {
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      text-align: center;
     }
 
-    .tab {
-      cursor: pointer;
-      padding: 10px 15px;
-      border: 1px solid #ccc;
-      border-bottom: none;
-      background-color: #f2f2f2;
-      user-select: none;
+    nav {
+      background-color: #666;
+      padding: 10px;
+      text-align: center;
     }
 
-    .tab:hover {
-      background-color: #ddd;
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 16px;
+      margin: 0 5px;
     }
 
-    .tab.active {
-      background-color: #fff;
-      border: 1px solid #ccc;
-    }
-
-    .tab-content {
-      display: none;
-      padding: 20px;
-      border: 1px solid #ccc;
-      border-top: none;
-    }
-
-    .tab-content.active {
-      display: block;
+    nav a:hover {
+      background-color: #888;
     }
   </style>
 </head>
 <body>
 
-  <div class="tabs">
-    <div class="tab" onclick="openTab('tab1')">Tab 1</div>
-    <div class="tab" onclick="openTab('tab2')">Tab 2</div>
-    <div class="tab" onclick="openTab('tab3')">Tab 3</div>
-  </div>
+  <header>
+    <h1>Your Website Name</h1>
+  </header>
 
-  <div id="tab1" class="tab-content active">
-    <h2>Content for Tab 1</h2>
-    <p>This is the content for the first tab.</p>
-  </div>
+  <nav>
+    <ul>
+      <li><a href="/about/">About</a></li>
+      <li><a href="/projects/">Projects</a></li>
+      <li><a href="/portfolio/">Portfolio</a></li>
+      <li><a href="/tags/">Tags</a></li>
+      <li><a href="/dreams/">Dreams</a></li>
+      <li><a href="/pandas/">Pandas</a></li>
+      <li><a href="/visuals/">VIZ</a></li>
+      <li><a href="/dataprep/">Data Prep</a></li>
+    </ul>
+  </nav>
 
-  <div id="tab2" class="tab-content">
-    <h2>Content for Tab 2</h2>
-    <p>This is the content for the second tab.</p>
-  </div>
-
-  <div id="tab3" class="tab-content">
-    <h2>Content for Tab 3</h2>
-    <p>This is the content for the third tab.</p>
-  </div>
-
-  <script>
-    function openTab(tabName) {
-      var i, tabContent, tabLinks;
-
-      tabContent = document.getElementsByClassName("tab-content");
-      for (i = 0; i < tabContent.length; i++) {
-        tabContent[i].style.display = "none";
-      }
-
-      tabLinks = document.getElementsByClassName("tab");
-      for (i = 0; i < tabLinks.length; i++) {
-        tabLinks[i].classList.remove("active");
-      }
-
-      document.getElementById(tabName).style.display = "block";
-      event.currentTarget.classList.add("active");
-    }
-  </script>
+  <!-- Your page content goes here -->
 
 </body>
 </html>
