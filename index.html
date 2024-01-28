@@ -1,86 +1,88 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
 
-        <!--==================== UNICONS ====================-->
-        
-        
-        <!--==================== SWIPER CSS ====================-->
-        <link rel="stylesheet" href="">
-        
-        <!--==================== CSS ====================-->
-        <link rel="stylesheet" href="">
+    .tabs {
+      display: flex;
+    }
 
-        <title>Responsive Portfolio Website</title>
-    </head>
-    <body>
-        <!--==================== HEADER ====================-->
-        <header class="header" id="header">
-            
-        </header>
+    .tab {
+      cursor: pointer;
+      padding: 10px 15px;
+      border: 1px solid #ccc;
+      border-bottom: none;
+      background-color: #f2f2f2;
+      user-select: none;
+    }
 
-        <!--==================== MAIN ====================-->
-        <main class="main">
-            <!--==================== HOME ====================-->
-            <section class="home section" id="home">
-                
-            </section>
+    .tab:hover {
+      background-color: #ddd;
+    }
 
-            <!--==================== ABOUT ====================-->
-            <section class="about section" id="about">
-                
-            </section>
+    .tab.active {
+      background-color: #fff;
+      border: 1px solid #ccc;
+    }
 
-            <!--==================== SKILLS ====================-->
-            <section class="skills section" id="skills">
+    .tab-content {
+      display: none;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-top: none;
+    }
 
-            </section>
+    .tab-content.active {
+      display: block;
+    }
+  </style>
+</head>
+<body>
 
-            <!--==================== QUALIFICATION ====================-->
-            <section class="qualification section">
+  <div class="tabs">
+    <div class="tab" onclick="openTab('tab1')">Tab 1</div>
+    <div class="tab" onclick="openTab('tab2')">Tab 2</div>
+    <div class="tab" onclick="openTab('tab3')">Tab 3</div>
+  </div>
 
-            </section>
+  <div id="tab1" class="tab-content active">
+    <h2>Content for Tab 1</h2>
+    <p>This is the content for the first tab.</p>
+  </div>
 
-            <!--==================== SERVICES ====================-->
-            <section class="services section" id="services">
-                
-            </section>
+  <div id="tab2" class="tab-content">
+    <h2>Content for Tab 2</h2>
+    <p>This is the content for the second tab.</p>
+  </div>
 
-            <!--==================== PORTFOLIO ====================-->
-            <section class="portfolio section" id="portfolio">
-                
-            </section>
+  <div id="tab3" class="tab-content">
+    <h2>Content for Tab 3</h2>
+    <p>This is the content for the third tab.</p>
+  </div>
 
-            <!--==================== PROJECT IN MIND ====================-->
-            <section class="project section">
+  <script>
+    function openTab(tabName) {
+      var i, tabContent, tabLinks;
 
-            </section>
+      tabContent = document.getElementsByClassName("tab-content");
+      for (i = 0; i < tabContent.length; i++) {
+        tabContent[i].style.display = "none";
+      }
 
-            <!--==================== TESTIMONIAL ====================-->
-            <section class="testimonial section">
-                
-            </section>
+      tabLinks = document.getElementsByClassName("tab");
+      for (i = 0; i < tabLinks.length; i++) {
+        tabLinks[i].classList.remove("active");
+      }
 
-            <!--==================== CONTACT ME ====================-->
-            <section class="contact section" id="contact">
+      document.getElementById(tabName).style.display = "block";
+      event.currentTarget.classList.add("active");
+    }
+  </script>
 
-            </section>
-        </main>
-
-        <!--==================== FOOTER ====================-->
-        <footer class="footer">
-         
-        </footer>
-        
-        <!--==================== SCROLL TOP ====================-->
-        
-
-        <!--==================== SWIPER JS ====================-->
-        <script src=""></script>
-
-        <!--==================== MAIN JS ====================-->
-        <script src=""></script>
-    </body>
+</body>
 </html>
