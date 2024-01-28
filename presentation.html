@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #e6f7ff; /* Light blue background */
+    }
+
+    header {
+      background-color: #3399ff; /* Blue header */
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #66b3ff; /* Slightly darker blue for the navigation bar */
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav button {
+      background-color: #66b3ff; /* Button background color */
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      margin: 0 5px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    nav button:hover {
+      background-color: #99c2ff; /* Lighter blue on hover */
+    }
+
+    section {
+      padding: 20px;
+    }
+
+    .presentation {
+      border: 1px solid #ccc;
+      padding: 20px;
+      margin-bottom: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+    }
+
+    .presentation h3 {
+      color: #3399ff; /* Blue text for presentation titles */
+    }
+
+    .presentation p {
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Your Website Name</h1>
+  </header>
+
+  <nav>
+    <button onclick="window.location.href='/about/'">About</button>
+    <button onclick="window.location.href='/projects/'">Projects</button>
+    <button onclick="window.location.href='/portfolio/'">Portfolio</button>
+    <button onclick="window.location.href='/presentations/'">Presentations</button>
+    <button onclick="window.location.href='/tags/'">Tags</button>
+    <button onclick="window.location.href='/dreams/'">Dreams</button>
+    <button onclick="window.location.href='/pandas/'">Pandas</button>
+    <button onclick="window.location.href='/visuals/'">VIZ</button>
+    <button onclick="window.location.href='/dataprep/'">Data Prep</button>
+  </nav>
+
+  <section>
+    <h2>Presentations</h2>
+
+    <div class="presentation">
+      <h3>Presentation 1</h3>
+      <p>Description of Presentation 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <p>Date: January 1, 2023</p>
+      <a href="/presentation1.pdf" target="_blank">Download PDF</a>
+    </div>
+
+    <div class="presentation">
+      <h3>Presentation 2</h3>
+      <p>Description of Presentation 2. Duis sagittis ipsum. Praesent mauris.</p>
+      <p>Date: February 15, 2023</p>
+      <a href="/presentation2.pdf" target="_blank">Download PDF</a>
+    </div>
+
+    <!-- Add more presentations as needed -->
+
+  </section>
+
+  <!-- Your page content goes here -->
+
+</body>
+</html>
