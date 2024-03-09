@@ -47,14 +47,11 @@
       padding: 20px;
     }
 
-    .presentation-container {
-      text-align: center;
-    }
-
-    .presentation-container iframe {
-      width: 80%; /* Adjust the width as needed */
-      height: 500px; /* Adjust the height as needed */
-      border: none; /* Remove border if not needed */
+    /* Style for iframe */
+    .presentation-iframe {
+      width: 100%; /* Set width to 100% of container */
+      height: 600px; /* Set height as needed */
+      border: none; /* Remove border */
     }
   </style>
 </head>
@@ -72,11 +69,9 @@
   </nav>
 
   <section>
-    <div class="presentation-container">
-      <h2>Presentation</h2>
-      <!-- Embed your PowerPoint presentation using the iframe tag -->
-      <iframe src="https://view.officeapps.live.com/op/view.aspx?src=https://github.com/LFleming21/LFleming21.github.io/raw/main/presentation/Slide_Presentation.pptx" frameborder="0"></iframe>
-    </div>
+    <h2>Presentation</h2>
+    <!-- Embed your PowerPoint presentation using iframe -->
+    <iframe class="presentation-iframe" src="https://LFleming21.github.io/LFleming21.github.io/presentation/your_presentation.pptx"></iframe>
   </section>
 
 </body>
