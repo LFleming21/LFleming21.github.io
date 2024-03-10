@@ -1,0 +1,1 @@
+In the projects section of this file, I have folders containing the 5 projects I chose for my portfolio. These project folders contain reports, PPT presentation and if available the coding for each project. 

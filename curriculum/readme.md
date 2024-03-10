@@ -1,1 +1,1 @@
-
+In this section, you will be able to view the curriculum and specific path that I chose for my education at SU. 
