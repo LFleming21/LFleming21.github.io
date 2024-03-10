@@ -1,0 +1,1 @@
+Welcome to my Applied Data Science portfolio. Each section meets a specific requirement for the portfolio project which combined create a comprehensive overview of my eduction at Syracuse University. 
